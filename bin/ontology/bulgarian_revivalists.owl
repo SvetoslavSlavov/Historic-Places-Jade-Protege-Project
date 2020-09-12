@@ -1,0 +1,1859 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#"
+     xml:base="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#bornIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#bornIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#bornPlaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#bornPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#bornPlaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#brotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#brotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sisterOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#childOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#childOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#createdBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#createdBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#daughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#daughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#childOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sonOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#diedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#diedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#diedPlaceOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#diedPlaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#diedPlaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#fatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#fatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#motherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#husbandOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#husbandOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#wifeOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female"/>
+        <owl:propertyDisjointWith rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#wifeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#inspiredOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#inspiredOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#motherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#motherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#organized -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#organized">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#organizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#organizedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#partOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#relativeOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sisterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#sonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#childOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#createdBy"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TranslationWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatorOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TranslationWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#wifeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#wifeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writtenBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writtenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writtenBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#createdBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_m -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_finished_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_m -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#activity_started_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_m -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_born_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_m -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_died_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_alt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_alt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_family -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_family">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_first -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_first">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_sur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#person_name_sur">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_latitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-90.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-180.0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">180.0</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_name_alt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_name_alt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_d -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_d">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_m -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_m">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#place_opened_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#work_created_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#work_created_y">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#work_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#work_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ChurchSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ChurchSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClassSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClassSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Cleric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Cleric">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClericSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClericSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Creator">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#creatorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#CulturalPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#CulturalPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EducationalPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EducationalPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Enlightener -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Enlightener">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EnlighteningActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EnlighteningActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EnlighteningActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Gender"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#GenreWriting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#GenreWriting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#HightSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#HightSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Historical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Historical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#GenreWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Medical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Medical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Medicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Medicine">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MedicineEducation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityEducation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MedicineEducation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MedicineEducation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Monastery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Monastery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#CulturalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MutalSchool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MutalSchool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novelette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novelette">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Politician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Politician">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionPlace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionPlace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Revolutionary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Revolutionary">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Public"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EducationalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolEducation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolEducation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#SchoolStudyActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#StudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ShortStory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ShortStory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#StudyActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#StudyActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TeachingActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TeachingActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EnlighteningActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TranslationWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TranslationWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Translator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Translator">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#translatorOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TranslationWork"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Creator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TypeWriting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EducationalPlace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityEducation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityEducation">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#participatedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityStudyActivity"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityStudyActivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#UniversityStudyActivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#StudyActivity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Writer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Writer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#writerOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Creator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WritingWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Български революционен централен комитет (БРЦК)</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKHtistoBotev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKHtistoBotev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKAbstract"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1876</activity_finished_y>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1874</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <activity_name>Извършва църковна дейност</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolKarlovoVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolKarlovoVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ChurchSchool"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolStudyAbstract"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Учи в килийно училище</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1845</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolStudyAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolStudyAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ChurchSchool"/>
+        <activity_name>Учи в килийно училище</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClassSchool"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlacePlovdiv"/>
+        <activity_name>Учи в класно училище</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyStaraZagoraVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyStaraZagoraVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClassSchool"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyAbstract"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceStaraZagora"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1856</activity_finished_y>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1855</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClericCourseStudyPlovdivVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClericCourseStudyPlovdivVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ClassSchool"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyAbstract"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1857</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Учи за свещеник</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1856</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ръкоположен за дякон</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconAbstract"/>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1859</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#HightSchool"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Учи в гимназия</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolIvanVazov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolIvanVazov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#HightSchool"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolAbstract"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlacePlovdiv"/>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1866</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityInnerOrganizedInnerRevolutionaryOrganizationVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityInnerOrganizedInnerRevolutionaryOrganizationVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1872</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Създава Вътрешна революционна организация</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1868</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMinisterOfNationalEducationIvanVazov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMinisterOfNationalEducationIvanVazov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Министър на народното просвещение</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1897</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Монашество</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkAbstract"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1861</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Монах ръкоположен с името Игнатий</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1858</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolKarlovoVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolKarlovoVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#MutalSchool"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolStudyAbstract"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1849</activity_finished_y>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1846</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolStudyAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolStudyAbstract">
+        <activity_name>Учи във взаимно училище</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberAbstract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberAbstract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Народен представител</activity_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberIvanVazov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberIvanVazov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PoliticalActivity"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberAbstract"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1899</activity_finished_y>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityPublisherOfWordOfBulgarianEmigrants -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityPublisherOfWordOfBulgarianEmigrants">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#EnlighteningActivity"/>
+        <activity_finished_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</activity_finished_d>
+        <activity_finished_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</activity_finished_m>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1871</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Издава вестник „Дума на българските емигранти“</activity_name>
+        <activity_started_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</activity_started_d>
+        <activity_started_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</activity_started_m>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1871</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityRevolytionarySerbiaRomaniaVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityRevolytionarySerbiaRomaniaVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#RevolutionaryActivity"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceRomania"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSerbia"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1868</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Революционна дейност в Сърбия и Румъния</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1862</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityTeacherZadunaevoHristoBotev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityTeacherZadunaevoHristoBotev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#TeachingActivity"/>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Учител</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1866</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityWorkInChurchKarlovoVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityWorkInChurchKarlovoVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ReligionActivity"/>
+        <relatedTo rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo"/>
+        <activity_finished_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1854</activity_finished_y>
+        <activity_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Послушник</activity_name>
+        <activity_started_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1852</activity_started_y>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonHristoBotev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonHristoBotev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <bornIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKalofer"/>
+        <diedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceVratsaMountain"/>
+        <organized rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityPublisherOfWordOfBulgarianEmigrants"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityBRCKHtistoBotev"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityTeacherZadunaevoHristoBotev"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkKamBrataSi"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkNaProshtavane"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkVMehanata"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkYourMotherBotev"/>
+        <person_born_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</person_born_d>
+        <person_born_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</person_born_m>
+        <person_born_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1847</person_born_y>
+        <person_died_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</person_died_d>
+        <person_died_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</person_died_m>
+        <person_died_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1876</person_died_y>
+        <person_name_alt rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Христо Ботев</person_name_alt>
+        <person_name_family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Петков</person_name_family>
+        <person_name_first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Христо</person_name_first>
+        <person_name_sur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ботьов</person_name_sur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonIvanVazov -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonIvanVazov">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <bornIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSopot"/>
+        <diedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSofia"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClassSchoolStudyAbstract"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityHighSchoolIvanVazov"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMinisterOfNationalEducationIvanVazov"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolStudyAbstract"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityParlamentMemberIvanVazov"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkGramadaPoem"/>
+        <writerOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkPodIgotoNovel"/>
+        <person_born_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</person_born_d>
+        <person_born_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</person_born_m>
+        <person_born_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1850</person_born_y>
+        <person_died_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</person_died_d>
+        <person_died_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</person_died_m>
+        <person_died_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1921</person_died_y>
+        <person_name_family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Вазов</person_name_family>
+        <person_name_first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Иван</person_name_first>
+        <person_name_sur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Минчов</person_name_sur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonVasilLevski -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PersonVasilLevski">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Male"/>
+        <bornIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo"/>
+        <diedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSofia"/>
+        <organized rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityInnerOrganizedInnerRevolutionaryOrganizationVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityChurchSchoolKarlovoVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityClericCourseStudyPlovdivVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityDeaconVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMonkVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityMutalSchoolKarlovoVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityRevolytionarySerbiaRomaniaVasilLevski"/>
+        <participatedIn rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ActivityWorkInChurchKarlovoVasilLevski"/>
+        <person_born_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</person_born_d>
+        <person_born_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</person_born_m>
+        <person_born_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1837</person_born_y>
+        <person_died_d rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</person_died_d>
+        <person_died_m rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</person_died_m>
+        <person_died_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1873</person_died_y>
+        <person_name_alt rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Васил Левски</person_name_alt>
+        <person_name_family rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Кунчев</person_name_family>
+        <person_name_first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Васил</person_name_first>
+        <person_name_sur rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Иванов</person_name_sur>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">България</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKalofer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKalofer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6147141</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.9575779</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град Калофер</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceKarlovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6382752</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.7771167</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град Карлово</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlacePlovdiv -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlacePlovdiv">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6382752</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.7771167</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град Пловдив</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceRomania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceRomania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Румъния</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSerbia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSerbia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сърбия</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSofia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSofia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6954108</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.2539072</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град София</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSopot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceSopot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6522726</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.7323913</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град Сопот</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceStaraZagora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceStaraZagora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria"/>
+        <place_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.6382752</place_latitude>
+        <place_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.7771167</place_longitude>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">град Стара Загора</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceVratsaMountain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceVratsaMountain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+        <partOf rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#PlaceBulgaria"/>
+        <place_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Врачанска планина</place_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkGramadaPoem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkGramadaPoem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1880</work_created_y>
+        <work_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Грамада</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkKamBrataSi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkKamBrataSi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1868</work_created_y>
+        <work_name>Към брата си</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkNaProshtavane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkNaProshtavane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1868</work_created_y>
+        <work_name>На прощаване</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkPodIgotoNovel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkPodIgotoNovel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novel"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1894</work_created_y>
+        <work_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Под игото</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkVMehanata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkVMehanata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1873</work_created_y>
+        <work_name>В механата</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkYourMotherBotev -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#WorkYourMotherBotev">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+        <work_created_y rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1867</work_created_y>
+        <work_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Майце си</work_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Activity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Work"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Article"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novelette"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Novella"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#Poem"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#ShortStory"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#childOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#marriedTo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#parentOf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lpendov/ontologies/2020/2/bulgarian-revivalists#siblingOf"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

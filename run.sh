@@ -1,0 +1,3 @@
+#!/bin/bash
+javac -classpath lib/jade.jar:lib/org.semanticweb.HermiT.jar:lib/owlapi-distribution-3.5.0.jar:lib/owlapi-distribution-3.5.0-javadoc.jar:lib/owlapi-distribution-3.5.0-sources.jar:classes -d classes src/uni/fmi/masters/entities/*.java src/uni/fmi/masters/*.java
+java -classpath lib/jade.jar:lib/org.semanticweb.HermiT.jar:lib/owlapi-distribution-3.5.0.jar:lib/owlapi-distribution-3.5.0-javadoc.jar:lib/owlapi-distribution-3.5.0-sources.jar:classes jade.Boot -gui -agents "AgentQuestionAnswerer:uni.fmi.masters.AgentQuestionAnswerer;agent_sender:uni.fmi.masters.AgentQuestionSender;agent_gui:uni.fmi.masters.AgentGUI"
